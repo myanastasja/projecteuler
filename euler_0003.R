@@ -22,4 +22,4 @@ primeFactors <- function (x) {
 
 600851475143/7/2/2/5/3/2/5/5/5/5/3/7/54499
 
-primeFactors(143059875)
+primeFactors(200283825048)
