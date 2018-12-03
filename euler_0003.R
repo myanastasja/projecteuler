@@ -11,14 +11,15 @@ isPrimeNumber <- function(x) {
     return(y)
 }
 
-maxPrimeFactor <- function (x) {
+primeFactors <- function (x) {
     if (isPrimeNumber(x)) return(x)
     y <- 1
     for (i in 2: round(x/2)) {
         if (x %% i == 0 && isPrimeNumber(i)) y <- c(y, i)
     }
-    return(max(y))
+    return(y)
 }
 
-600851475143/7/2/2/5/3/2/5/5/5/5/3
-maxPrimeFactor(381493)
+600851475143/7/2/2/5/3/2/5/5/5/5/3/7/54499
+
+primeFactors(143059875)
