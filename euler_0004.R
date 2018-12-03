@@ -7,19 +7,13 @@
 
 digitList <- function(x) {
     maxpot <- floor(log10(x))
-    # print(maxpot)
     digits <- 0
     for(i in 1:(maxpot+1)) {
-        # print(i)
         tmp <- floor((x %% (10^i)) / (10^(i-1)))
-        # print(tmp)
         digits <- c(digits, tmp)
-        # print(digits)
     }
     return(digits[length(digits):2])
 }
-
-# digitList(8394274242)
 
 isPalindrom <- function(x) {
     ltr <- digitList(x)
@@ -29,13 +23,9 @@ isPalindrom <- function(x) {
     return(TRUE)
 }
 
-# isPalindrom(45654)
-
 maxPalindromAmongProductsOf2NDigitNumbers <- function(N) {
     x <- y <- 10^N-1
     palindrom <- 0
-    print(x)
-    print(y)
     for(i in x:(10^(N-1))) 
         for(j in x:(10^(N-1)))
             if(isPalindrom(i*j)) palindrom <- c(palindrom, i*j)
