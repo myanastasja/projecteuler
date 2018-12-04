@@ -51,4 +51,5 @@ primeFactors <- function(x) {
 # primeFactors(13931)
 # primeFactors(6857)
 
+as.integer(2.1474*(10^9))
 
