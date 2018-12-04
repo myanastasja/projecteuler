@@ -24,18 +24,12 @@
 # Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
 adjacentNDigitsInSeriesWithMaxProduct <- function(series, N){
-    sereies <- as.character(series)
+    series <- as.character(series)
     if(nchar(series) < N) return("No result! Series too small")
-    if(nchar(series) = N) return()
+    if(nchar(series) == N) {
+        return(prod(as.numeric(unlist(strsplit(series, split = "")))))
+    }
+    
 }
 
-x <- as.character(123456)
-nchar(x)
-x[1]
-adjacentNDigitsInSeriesWithMaxProduct(1234, 5)
-
-
-
-
-
-    
+adjacentNDigitsInSeriesWithMaxProduct(12345,8)
