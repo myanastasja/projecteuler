@@ -4,19 +4,13 @@
 # What is the smallest positive number that is 
 # evenly divisible by all of the numbers from 1 to 20?
 
-smallestNumberEvenlyDivisiblefrom1ToN <- function(N) {
-    count <- 0
-    sum <- 1
-    for(i in 1:N) {
-        print(i)
-        for(j in 1:i) {
-            print(j)
-            if(j %% i == 0) count++
-        }
-        print(sum)
-        if(count != 0) sum <- sum*j
-        print(sum)
-    }
+install.packages("vecsets")
+library(vecsets)
+
+smallestNumberEvenlyDivisibleBy1ToN <- function(N) {
+    tmp <- 1
+    for(i in 2:N) tmp <- vunion(tmp, primeFactors(i))
+    return(prod(tmp))
 }
 
-1 * 2 * 3 * 
+smallestNumberEvenlyDivisibleBy1ToN(20)
