@@ -8,6 +8,7 @@ isPrimeNumber <- function(x) {
     if(x > 3) {
         for (i in 2:floor(x/2)) {
             if (x %% i == 0) count <- count+1
+            if (count != 0) break
             # print(i)
             # print(x)
             # print(count)

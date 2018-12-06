@@ -1,0 +1,192 @@
+> sum <- 0
+> tic("2:100000")
+> for(i in 2:100000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+2:100000: 46.08 sec elapsed
+> print(sum)
+[1] 454396537
+> 
+> tic("100001:200000")
+> for(i in 100001:20000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+100001:200000: 43.95 sec elapsed
+> print(sum)
+[1] 887621883
+> 
+> tic("200001:300000")
+> for(i in 200001:300000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+200001:300000: 203.83 sec elapsed
+> print(sum)
+[1] 2887528184
+> 
+> tic("300001:400000")
+> for(i in 300001:400000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+300001:400000: 277.18 sec elapsed
+> print(sum)
+[1] 5636922601
+> 
+> tic("400001:500000")
+> for(i in 400001:500000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+400001:500000: 348.56 sec elapsed
+> print(sum)
+[1] 9092257265
+> 
+> tic("500001:600000")
+> for(i in 500001:600000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+500001:600000: 420.84 sec elapsed
+> print(sum)
+[1] 13249847415
+> 
+> tic("600001:700000")
+> for(i in 600001:700000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+600001:700000: 489.41 sec elapsed
+> print(sum)
+[1] 18088307382
+> 
+> tic("700001:800000")
+> for(i in 700001:800000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+700001:800000: 562.85 sec elapsed
+> print(sum)
+[1] 23643684508
+> 
+> tic("800001:900000")
+> for(i in 800001:900000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+800001:900000: 691.08 sec elapsed
+> print(sum)
+[1] 29867353335
+> 
+> tic("900001:1000000")
+> for(i in 900001:1000000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+900001:1000000: 736.05 sec elapsed
+> print(sum)
+[1] 36728423093
+> 
+> tic("1000001:1100000")
+> for(i in 1000001:1100000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1000001:1100000: 807.51 sec elapsed
+> print(sum)
+[1] 44303774765
+> 
+> tic("1100001:1200000")
+> for(i in 1100001:1200000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1100001:1200000: 849.83 sec elapsed
+> print(sum)
+[1] 52611427201
+> 
+> tic("1200001:1300000")
+> for(i in 1200001:1300000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1200001:1300000: 885.02 sec elapsed
+> print(sum)
+[1] 61466016842
+> 
+> tic("1300001:1400000")
+> for(i in 1300001:1400000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1300001:1400000: 953.26 sec elapsed
+> print(sum)
+[1] 71059277717
+> 
+> tic("1400001:1500000")
+> for(i in 1400001:1500000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1400001:1500000: 1012.23 sec elapsed
+> print(sum)
+[1] 81252464326
+> 
+> tic("1500001:1600000")
+> for(i in 1500001:1600000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1500001:1600000: 1072.01 sec elapsed
+> print(sum)
+[1] 92056613258
+> 
+> tic("1600001:1700000")
+> for(i in 1600001:1700000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1600001:1700000: 1304.25 sec elapsed
+> print(sum)
+[1] 1.03629e+11 ...23702545659
+> 
+> tic("1700001:1800000")
+> for(i in 1700001:1800000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1700001:1800000: 1245 sec elapsed
+> print(sum)
+[1] 115759158917
+> 
+> tic("1800001:1900000")
+> for(i in 1800001:1900000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1800001:1900000: 1287.61 sec elapsed
+> print(sum)
+[1] 128629454552
+> 
+> tic("1900001:2000000")
+> for(i in 1900001:2000000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> toc()
+1900001:2000000: 1428.37 sec elapsed
+> print(sum)
+[1] 142091849992
+----------------------------
+
+> sum <- 0
+> for(i in 1600001:1700000) {
++     if(isPrimeNumber(i)) sum <- sum + i
++ }
+> sum
+[1] 11572366516
+
+
+
+
