@@ -16,3 +16,10 @@ print(sum)
 
 
 
+
+#####################
+sum <- 0
+for(i in 2:100) {
+    if(isPrimeNumberOpt(i)) sum <- sum + i
+}
+print(sum)

@@ -12,5 +12,15 @@ isPrimeNumberOpt <- function(x) {
     return(y)
 }
 
-
-
+# 
+# isPrimeNumberRecursion <- function(x) {
+#     y <- TRUE
+#     for (i in ceiling(x/2):2)
+#         if (x %% i == 0) {
+#             if(isPrimeNumberRecursion(i)) {
+#                 y <- FALSE
+#                 break
+#             }
+#         }
+#     return(y)
+# }

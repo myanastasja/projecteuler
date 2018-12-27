@@ -23,7 +23,7 @@ isPrimeNumber <- function(x) {
 # }
 
 distinctPrimeFactors <- function(x) {
-    if (isPrimeNumber(x)) return(x)
+    if (isPrimeNumberOpt(x)) return(x)
     y <- 1
     for (i in 2:floor(x/2)) {
         # print(i)
